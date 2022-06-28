@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "stripInternal": true,
+    "keyofStringsOnly": false,
+    "noImplicitUseStrict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "alwaysStrict": false,
+    "declaration": true,
+    "module": "commonjs",
+    "importHelpers": true,
+    "types": [
+      "jest",
+      "node",
+      "module"
+    ],
+    "sourceMap": true,
+    "target": "es2017"
+  }
+}

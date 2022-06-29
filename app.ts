@@ -19,7 +19,14 @@ QueueManager.createInstance({
 
   message.getId() // null
 
-  const producer = new Producer();
+  const producer = new Producer({
+    redis: {
+      client: RedisClientName.REDIS,
+      options: {
+        host: 'redis-server'
+      },
+    },
+  });
   producer.produce(message, (err) => {
     if (err) console.log(err);
     else {
